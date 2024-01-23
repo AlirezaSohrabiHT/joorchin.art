@@ -1,8 +1,13 @@
-.column {
-    flex: 45%;
-    max-width: 50%;
+.column_left {
+    flex: 55%;
+    max-width: 60%;
     padding: 0 4px;
   }
+.column_right{
+  flex: 35%;
+  max-width: 39%;
+  padding: 0 4px;
+}
 .main_container{
   display: flex;
   flex-wrap: wrap;

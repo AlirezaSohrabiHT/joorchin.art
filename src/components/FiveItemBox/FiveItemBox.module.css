@@ -1,0 +1,30 @@
+.vedio1{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+.vedio2{
+    width: 97%;
+    object-fit: cover;
+    height: 506px;
+    padding-left: 3%;
+}
+.vedio3{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.vedio4{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.vedio5{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+.threebox{
+    display: flex;
+    flex-direction: row-reverse;
+}

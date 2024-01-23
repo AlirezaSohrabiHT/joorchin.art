@@ -10,6 +10,18 @@
 .main_container{
 
 }
-.vedio{
+.vedio1{
     width: 100%;
+    object-fit: cover;
+    height: 600px;
+}
+.vedio2{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+.vedio3{
+    width: 100%;
+    object-fit: cover;
+    height: 205px;
 }
