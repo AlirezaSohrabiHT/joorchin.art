@@ -50,7 +50,7 @@ const Header = () => {
 
             </div>
         </div>
-        <video autoplay="autoplay"id="vid" loop="loop" muted>
+        <video className={styles.header_vedio} autoplay="autoplay"id="vid" loop="loop" muted>
           <source src={imageURL} type="video/mp4"/>
         </video>
         </div>
