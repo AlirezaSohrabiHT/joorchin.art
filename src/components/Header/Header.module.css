@@ -8,15 +8,34 @@
   }
 
 .main_container{
+    width: 100%;
     position: absolute;
     left: 0;
 }
 .container{
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 80px;
 }
-  .header_vedio{
-    object-fit: cover;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+.header_vedio{
+  object-fit: cover;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.header_logo {
+  width: 138px;
+}
+.header_menu {
+  width: 80px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .header_logo {
+    width: 50px;
   }
+}
