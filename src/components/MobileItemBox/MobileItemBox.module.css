@@ -1,0 +1,40 @@
+.twovedio_container_larg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.twovedio_container_small{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main_container{
+    width: 100%;
+}
+.vedio1{
+    width: 95%;
+    height: 300px;
+    object-fit: fill;
+}
+.vedio2{
+    width: 45%;
+    height: 363px;
+    object-fit: fill;
+}
+.vedio3{
+    width: 45%;
+    height: 363px;
+    object-fit: fill;
+}
+.vedio4{
+    width: 45%;
+    height: 200px;
+    object-fit: fill;
+}
+.vedio5{
+    width: 45%;
+    height: 200px;
+    object-fit: fill;
+}
