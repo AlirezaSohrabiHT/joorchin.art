@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import logo from "../../assets/Logo.svg"
-import styles from "./Header.module.css"
+import logo from "../../assets/Logo.svg";
+import menu from "../../assets/menu.svg";
+import styles from "./Header.module.css";
 const Header = () => {
     const [imageURL, setImageURL] = useState('');
     const [posts, setPosts] = useState([]);
@@ -42,17 +43,17 @@ const Header = () => {
     return(
         <>
         <div className="header">
-        <div className={`container-fluid ${styles.main_container} `}>
-            <div className='row'>
-                <div className={`col-12 ${styles.container}`}>
-                    <img src={logo}/>
-                </div>
-
-            </div>
-        </div>
-        <video className={styles.header_vedio} autoplay="autoplay"id="vid" loop="loop" muted>
-          <source src={imageURL} type="video/mp4"/>
-        </video>
+          <div className={`container-fluid ${styles.main_container} `}>
+              <div className='row'>
+                  <div className={`col-12 ${styles.container}`}>
+                      <img src={logo} alt='Joorchin Art Logo' className={styles.header_logo}/>
+                      <img src={menu} alt="Menu" className={styles.header_menu} />
+                  </div>
+              </div>
+          </div>
+          <video className={styles.header_vedio} autoplay="autoplay" id="vid" loop="loop" muted>
+            <source src={imageURL} type="video/mp4"/>
+          </video>
         </div>
         </>
     )

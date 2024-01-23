@@ -1,28 +1,48 @@
-
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import styles from './Footer.module.css';
+import logo from '../../assets/Logo.svg';
+import instagram from '../../assets/Instagram.svg';
+import twitter from '../../assets/Twitter.svg';
+import linkedin from '../../assets/Linkedin.svg';
 
 const Footer = () => {
-    return (
-        <div className="footer-container">
-            <div className="social-icons">
-                <img src="instagram.png" alt="Instagram" />
-                <img src="twitter.png" alt="Twitter" />
-                <img src="linkedin.png" alt="LinkedIn" />
-                <img src="slack.png" alt="Slack" />
-                <img src="email.png" alt="Email" />
-                <img src="youtube.png" alt="YouTube" />
-            </div>
-            <div className="contact-info">
-                <p>تلفن تماس : 09150420447</p>
-                <p>آدرس : مشهد، بلوار سجاد، بین 15 و13</p>
-                <a href="mailto:salam@joorchin.co">ایمیل : salam@joorchin.co</a>
-            </div>
-            <div className="description">
-                <p>برای دریافت جدیدترین اخبار و تخفیفات عضو خبرنامه شوید</p>
-            </div>
-        </div>
-    );
-};
+    return(
+        <>
+            <footer>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className={styles.footer_container}>
+                                <div className={styles.footer_top_box}>
+                                    <div>
+                                        <p>&copy; 2024 Joorchin Digital Marketing Agency.</p>
+                                    </div>
+                                    <div>
+                                        <img src={logo} alt="Joorchin Art Logo" />
+                                    </div>
+                                    <div className={styles.icons_group}>
+                                        <a href="#">
+                                            <img src={linkedin} alt="LinkedIn Logo" />
+                                        </a>
+                                        <a href="#">
+                                            <img src={instagram} alt="Instagram Logo" />
+                                        </a>
+                                        <a href="#">
+                                            <img src={twitter} alt="Twitter Logo" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className={styles.footer_bottom_box}>
+                                    <p className={`${styles.border_around} ${styles.lang}`}>FR</p>
+                                    <p className={`${styles.lang}`}>EN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </>
+    )
+}
 
 export default Footer;
